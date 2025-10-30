@@ -1895,7 +1895,7 @@ section,
 
 
 /* 💻 Tablets & Small Laptops (768px – 1023px) */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 576px) and (max-width: 1024px) {
   #faq1 {
     position: relative;
     width: 75%;
@@ -1970,12 +1970,14 @@ section,
     width: 95%;
     margin: 40px auto;
     padding: 25px 15px;
-    top: 550px;
+    top: 780px;
   }
 }
 
+
+
 /* 📱 Extra small devices (e.g., old phones) */
-@media (max-width: 400px) {
+@media (max-width: 400px) and (max-width: 411px) {
   #faq1 {
     position: static;
     padding: 20px 10px;
@@ -1988,8 +1990,50 @@ section,
   }
 }
 
+@media (max-width: 375px) and (max-width: 399px) {
+  #faq1 {
+    position: static;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    top: 600px;
+  }
+
+  .faq-item {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 425px) {
+  #faq1 {
+    position: static;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    top: 580px;
+  }
+
+  .faq-item {
+    padding: 15px;
+  }
+}
+
+
+
+@media (min-width: 412px) and (max-width: 424px) {
+  #faq1 {
+    position: static;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    top: 780px;
+  }
+
+  .faq-item {
+    padding: 15px;
+  }
+}
+
+
 /* Extra top spacing for mobile view only */
-@media (max-width: 767px) {
+@media (max-width: 576px) {
 
   /* Make images responsive on mobile */
   .below-banner img {
@@ -1999,7 +2043,7 @@ section,
     /* Maintain aspect ratio */
     display: block !important;
     padding: 10px !important;
-    margin-top: 480px !important;
+    margin-top: 490px !important;
     /* Smaller, more flexible spacing */
   }
 
