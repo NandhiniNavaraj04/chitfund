@@ -1979,6 +1979,10 @@ section,
 
 /* 📱 Extra small devices (e.g., old phones) */
 @media (min-width: 400px) and (max-width: 411px) {
+	 .faq-item {
+    flex: 1 1 100%;
+    /* single column */
+  }
   #faq1 {
     position: static;
     padding: 20px 10px;
@@ -1991,12 +1995,33 @@ section,
   }
 }
 
-@media (min-width: 375px) and (max-width: 399px) {
+
+@media (min-width: 320px) and (max-width: 359px) {
+	 .faq-item {
+    flex: 1 1 100%;
+    /* single column */
+  }
   #faq1 {
     position: static;
     padding: 20px 10px;
     font-size: 0.9rem;
-    top: 580px;
+    top: 550px;
+  }
+
+  .faq-item {
+    padding: 15px;
+  }
+}
+@media (min-width: 375px) and (max-width: 399px) {
+	 .faq-item {
+    flex: 1 1 100%;
+    /* single column */
+  }
+  #faq1 {
+    position: static;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    top: 570px;
   }
 
   .faq-item {
@@ -2005,24 +2030,15 @@ section,
 }
 
 @media (min-width: 390px) and (max-width: 412px) {
+	 .faq-item {
+    flex: 1 1 100%;
+    /* single column */
+  }
   #faq1 {
     position: static;
     padding: 20px 10px;
     font-size: 0.9rem;
-    top: 720px;
-  }
-
-  .faq-item {
-    padding: 15px;
-  }
-}
-
-@media (min-width: 425px) and (max-width: 575px) {
-  #faq1 {
-    position: static;
-    padding: 20px 10px;
-    font-size: 0.9rem;
-    top: 580px;
+    top: 750px;
   }
 
   .faq-item {
@@ -2033,11 +2049,51 @@ section,
 
 
 @media (min-width: 412px) and (max-width: 424px) {
+	 .faq-item {
+    flex: 1 1 100%;
+    /* single column */
+  }
   #faq1 {
     position: static;
     padding: 20px 10px;
     font-size: 0.9rem;
     top: 780px;
+  }
+
+  .faq-item {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 429px) {
+	 .faq-item {
+    flex: 1 1 100%;
+    /* single column */
+  }
+  #faq1 {
+    position: static;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    top: 570px;
+  }
+
+  .faq-item {
+    padding: 15px;
+  }
+}
+
+
+
+@media (min-width: 430px) and (max-width: 575px) {
+	 .faq-item {
+    flex: 1 1 100%;
+    /* single column */
+  }
+  #faq1 {
+    position: static;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    top: 800px;
   }
 
   .faq-item {
