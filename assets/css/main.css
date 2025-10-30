@@ -1970,7 +1970,7 @@ section,
     width: 95%;
     margin: 40px auto;
     padding: 25px 15px;
-    top: 780px;
+    top: 550px;
   }
 }
 
@@ -1990,7 +1990,7 @@ section,
   }
 }
 
-@media (max-width: 375px) and (max-width: 399px) {
+@media (max-width: 375px) and (max-width: 423px) {
   #faq1 {
     position: static;
     padding: 20px 10px;
@@ -2003,7 +2003,7 @@ section,
   }
 }
 
-@media (min-width: 425px) {
+@media (min-width: 425px) and (max-width: 399px) {
   #faq1 {
     position: static;
     padding: 20px 10px;
