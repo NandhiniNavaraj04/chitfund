@@ -975,9 +975,10 @@ section,
 }
 
 .hero .welcome p {
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
   font-weight: 300;
+  color:#F3F3F3;
 }
 
 .hero .content {
@@ -1970,14 +1971,14 @@ section,
     width: 95%;
     margin: 40px auto;
     padding: 25px 15px;
-    top: 550px;
+    top: 600px;
   }
 }
 
 
 
 /* 📱 Extra small devices (e.g., old phones) */
-@media (max-width: 400px) and (max-width: 411px) {
+@media (min-width: 400px) and (max-width: 411px) {
   #faq1 {
     position: static;
     padding: 20px 10px;
@@ -1990,12 +1991,12 @@ section,
   }
 }
 
-@media (max-width: 375px) and (max-width: 423px) {
+@media (min-width: 375px) and (max-width: 399px) {
   #faq1 {
     position: static;
     padding: 20px 10px;
     font-size: 0.9rem;
-    top: 600px;
+    top: 580px;
   }
 
   .faq-item {
@@ -2003,7 +2004,20 @@ section,
   }
 }
 
-@media (min-width: 425px) and (max-width: 399px) {
+@media (min-width: 390px) and (max-width: 412px) {
+  #faq1 {
+    position: static;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    top: 720px;
+  }
+
+  .faq-item {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 575px) {
   #faq1 {
     position: static;
     padding: 20px 10px;
