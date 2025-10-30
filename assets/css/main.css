@@ -975,8 +975,9 @@ section,
 }
 
 .hero .welcome p {
-  font-size: 24px;
+  font-size: 16px;
   margin: 0;
+  font-weight: 300;
 }
 
 .hero .content {
@@ -1838,6 +1839,15 @@ section,
   }
 }
 
+/* 📱 Mobile view (up to 767px) */
+@media (max-width: 767px) {
+
+  #bannerimage {
+    display: none !important;
+  }
+}
+
+
 /* FAQ Section */
 #faq1 {
 
@@ -1883,69 +1893,69 @@ section,
   line-height: 1.6;
 }
 
-/* 🖥️ Laptops and Tablets */
-@media (min-width: 768px) and (max-width: 1000px) {
+
+/* 💻 Tablets & Small Laptops (768px – 1023px) */
+@media (min-width: 768px) and (max-width: 1024px) {
   #faq1 {
     position: relative;
-    width: 70%;
+    width: 75%;
+    top: 340px;
+    padding: 0px 5px;
+  }
+
+  .below-banner img {
+    width: 100% !important;
+    /* Full width of container */
+    height: auto !important;
+    /* Maintain aspect ratio */
+    display: block !important;
+    padding: 10px !important;
+    margin-top: 100px !important;
+    /* Smaller, more flexible spacing */
+  }
+
+
+}
+
+/* 🖥️ Medium Desktops (1024px – 1279px) */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  #faq1 {
+    position: relative;
+    width: 80%;
     top: 350px;
-    padding: 5px 5px;
+    padding: 20px 20px;
   }
 }
 
-/* 🖥️ Large Desktops */
-@media (min-width: 1000px) and (max-width: 1024px) {
+/* 🖥️ Large Desktops (1280px – 1439px) */
+@media (min-width: 1280px) and (max-width: 1439px) {
   #faq1 {
     position: relative;
-    top: 300px;
-
     width: 85%;
-    padding: 30px 20px;
+    top: 450px;
+    padding: 25px 20px;
   }
 }
 
-/* 🖥️ Large Desktops */
-@media (min-width: 1025px) and (max-width: 1199px) {
+/* 🖥️ Extra-Large Screens (1440px – 1599px) */
+@media (min-width: 1440px) and (max-width: 1599px) {
   #faq1 {
     position: relative;
-    top: 550px;
-
     width: 85%;
-    padding: 30px 20px;
-  }
-}
-
-/* 🖥️ Large Desktops */
-@media (min-width: 1200px) and (max-width: 1280px) {
-  #faq1 {
-    top: 480px;
-    position: relative;
-    width: 85%;
-    padding: 30px 20px;
-  }
-}
-
-
-
-/* 🖥️ Large Desktops */
-@media (min-width: 1400px) and (max-width: 1500px) {
-  #faq1 {
-    top: 650px;
-    position: relative;
-    width: 85%;
-    padding: 30px 20px;
-  }
-}
-
-@media (min-width: 1500px) {
-  #faq1 {
     top: 400px;
-    position: relative;
-    width: 85%;
     padding: 30px 20px;
   }
 }
 
+/* 🖥️ Ultra-Wide Screens (≥1600px) */
+@media (min-width: 1600px) {
+  #faq1 {
+    position: relative;
+    width: 80%;
+    top: 380px;
+    padding: 40px 25px;
+  }
+}
 
 
 /* 📱 Mobile phones */
@@ -1960,7 +1970,7 @@ section,
     width: 95%;
     margin: 40px auto;
     padding: 25px 15px;
-    top: 700px;
+    top: 550px;
   }
 }
 
@@ -1970,7 +1980,7 @@ section,
     position: static;
     padding: 20px 10px;
     font-size: 0.9rem;
-    top: 700px;
+    top: 550px;
   }
 
   .faq-item {
@@ -1979,7 +1989,7 @@ section,
 }
 
 /* Extra top spacing for mobile view only */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   /* Make images responsive on mobile */
   .below-banner img {
@@ -1989,7 +1999,7 @@ section,
     /* Maintain aspect ratio */
     display: block !important;
     padding: 10px !important;
-    margin-top: 450px !important;
+    margin-top: 480px !important;
     /* Smaller, more flexible spacing */
   }
 
@@ -2292,7 +2302,7 @@ section,
   background: #014F9E;
   color: #fff;
   font-weight: 600;
-  width: 122.027px;
+  /* width: 122.027px; */
   height: 44.587px;
   padding: 11.733px;
   display: flex;
