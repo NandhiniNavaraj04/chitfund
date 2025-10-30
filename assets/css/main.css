@@ -325,8 +325,8 @@ h6 {
   color: #333;
   background: #fff;
   font-size: 14px;
-  padding: 8px 25px;
-  margin: 5px 0 0 30px;
+  padding: 14px 25px;
+  margin: 5px 0 0 0px;
   border-radius: 10px;
   transition: 0.3s;
 }
@@ -520,11 +520,11 @@ h6 {
     list-style: none;
     position: absolute;
     inset: 60px 20px 20px 20px;
-    padding: 10px 0;
+    padding: 0px 5px !important;
     margin: 0;
     border-radius: 6px;
     background-color: var(--nav-mobile-background-color);
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    /* border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%); */
     box-shadow: none;
     overflow-y: auto;
     transition: 0.3s;
@@ -978,7 +978,9 @@ section,
   font-size: 14px;
   margin: 0;
   font-weight: 300;
-  color:#F3F3F3;
+  color: #F3F3F3;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .hero .content {
@@ -1979,10 +1981,11 @@ section,
 
 /* 📱 Extra small devices (e.g., old phones) */
 @media (min-width: 400px) and (max-width: 411px) {
-	 .faq-item {
+  .faq-item {
     flex: 1 1 100%;
     /* single column */
   }
+
   #faq1 {
     position: static;
     padding: 20px 10px;
@@ -1997,10 +2000,11 @@ section,
 
 
 @media (min-width: 320px) and (max-width: 359px) {
-	 .faq-item {
+  .faq-item {
     flex: 1 1 100%;
     /* single column */
   }
+
   #faq1 {
     position: static;
     padding: 20px 10px;
@@ -2012,11 +2016,13 @@ section,
     padding: 15px;
   }
 }
+
 @media (min-width: 375px) and (max-width: 399px) {
-	 .faq-item {
+  .faq-item {
     flex: 1 1 100%;
     /* single column */
   }
+
   #faq1 {
     position: static;
     padding: 20px 10px;
@@ -2030,10 +2036,11 @@ section,
 }
 
 @media (min-width: 390px) and (max-width: 412px) {
-	 .faq-item {
+  .faq-item {
     flex: 1 1 100%;
     /* single column */
   }
+
   #faq1 {
     position: static;
     padding: 20px 10px;
@@ -2049,10 +2056,11 @@ section,
 
 
 @media (min-width: 412px) and (max-width: 424px) {
-	 .faq-item {
+  .faq-item {
     flex: 1 1 100%;
     /* single column */
   }
+
   #faq1 {
     position: static;
     padding: 20px 10px;
@@ -2066,10 +2074,29 @@ section,
 }
 
 @media (min-width: 425px) and (max-width: 429px) {
-	 .faq-item {
+  .faq-item {
     flex: 1 1 100%;
     /* single column */
   }
+
+  #faq1 {
+    position: static;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    top: 570px;
+  }
+
+  .faq-item {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 575px) {
+  .faq-item {
+    flex: 1 1 100%;
+    /* single column */
+  }
+
   #faq1 {
     position: static;
     padding: 20px 10px;
@@ -2084,11 +2111,12 @@ section,
 
 
 
-@media (min-width: 430px) and (max-width: 575px) {
-	 .faq-item {
+@media (min-width: 430px) and (max-width: 431px) {
+  .faq-item {
     flex: 1 1 100%;
     /* single column */
   }
+
   #faq1 {
     position: static;
     padding: 20px 10px;
